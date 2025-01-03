@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'IRANSansXMedium';
+    src: url('../Fonts/iransansx-cufonfonts/IRANSansXMedium.woff') format('woff');
+
+  }
+  @font-face {
+    font-family: 'IRANSansXRegular';
+    src: url('../Fonts/iransansx-cufonfonts/iransansxregular.woff') format('woff');
+
+  }
+
+:root {
+    --blue-light: #396CB6;
+    --light-clay: #3C8AA3;
+    --very-light:#B6FFFA;
+    --dark-clay: #306E82;
+    --light-dark: #272B2B;
+    --font-family: 'IRANSansXMedium' ;
+}
+
+
+.dark-theme {
+    --blue-light: #1e1e1e;
+    --light-clay: #333333;
+    --dark-clay: #555555;
+    --light-dark: #f5f5f5;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.container {
+    padding: 40px 80px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.set1 {
+    padding: 20px;
+}
+
+.set2 {
+    width: 400px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 42px 32px;
+    z-index: -2;
+}
+
+.set1 {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    border-radius: 100%;
+    background-color: var(--very-light);
+    border: 1px solid var(--dark-clay);
+}
+
+.std-name {
+    background-color: var(--dark-clay);
+    color: #fff;
+    padding: 68px 36px 40px;
+    border-radius: 16px;
+    margin-top: -86px;
+}
+
+.std-name h2 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+h1,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.contact {
+    background-color: var(--light-clay);
+    border-radius: 0 0 20px 20px;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+.contact ul {
+    padding: 20px;
+    margin-top: 0;
+}
+
+.contact ul li {
+    line-height: 2.5;
+    color: #fff;
+    padding: 0 14px;
+}
+
+.contact ul li i {
+    padding-left: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+h1,
+h4,
+.title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.set1 .title::after {
+    content: "";
+    border-radius: 20px;
+    background-color: var(--light-clay);
+    height: 28px;
+    position: relative;
+    right: 20px;
+    z-index: -1;
+    top: -18px;
+    width: 250px;
+    display: block;
+    opacity: 0.4;
+}
+
+h2.title {
+    margin-bottom: 0;
+}
+
+.reference ul li {
+    line-height: 2.5;
+}
+
+.set2 .title::after {
+    content: "";
+    border-radius: 20px;
+    background-color: var(--light-clay);
+    height: 28px;
+    position: relative;
+    z-index: -1;
+    top: -18px;
+    width: 200px;
+    display: block;
+    opacity: 0.4;
+}
+
+.skills ul {
+    list-style-type: "\1F44D";
+}
+
+.skills ul li {
+    line-height: 2.5;
+}
+
+.edu-details {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.edu-year {
+    width: 40%;
+}
+
+.edu-des {
+    width: 60%;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* دکمه تغییر تم */
+.theme-toggle-btn {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    
+    top: 20px;
+    right: 20px;
+    background-color: var(--blue-light);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--dark-clay);
+}
