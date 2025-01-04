@@ -17,7 +17,7 @@ function submitForm() {
     document.querySelector('.contact li:nth-child(3)').textContent = `🏠 ${address}`;
     document.querySelector('.about-me p').textContent = about; 
     document.querySelector('edu-detail li:nth-child(1)').textContent = education;
-    document.querySelector('reference').textContent = earns;
+    document.querySelector('.reference li:nth-child(1)').textContent = earns;
     document.querySelector('skills').textContent = skills;
     document.getElementById('userForm').style.display = 'none';
     document.querySelector('.container').style.display = 'block';

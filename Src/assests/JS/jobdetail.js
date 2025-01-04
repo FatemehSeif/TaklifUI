@@ -10,6 +10,8 @@ document.getElementById('file-input').addEventListener('change', function(event)
        
     }
 });
+
 function toggleMenu() {
     const navItems = document.querySelector('.nav-items');
-    navItems.classList.toggle('active'); }
+    navItems.classList.toggle('active');
+ }
