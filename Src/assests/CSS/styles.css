@@ -185,23 +185,22 @@ body {
     color: var(--primary-color-300);
 }
 
-
-.item2{
-    font-size:48px; 
-    display: flex; 
-    align-items: center; 
+.item2 {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
     gap: 16px;
+    cursor: pointer;
+}
 
-   
-    cursor: pointer; 
+.header-icons:hover {
+    color: var(--tertiary-color-100);
 }
-.header-icons :hover{
-    color: var(--tertiary-color-100); 
-}
+
 #wrap {
     display: flex;
     flex-direction: row;
-    height: calc(100vh - 60px); 
+    height: calc(100vh - 60px);
     position: relative;
 }
 
@@ -210,19 +209,21 @@ body {
     top: 0;
     right: 0;
     width: 250px;
-    height: calc(100vh - 60px); 
+    height: calc(100vh - 60px);
     background: var(--primary-color-250);
     border: solid var(--tertiary-color-100);
     border-top: none;
     border-width: 2px;
     color: var(--tertiary-color-300);
     padding: 20px;
-    transform: translateX(0); 
+    transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     text-align: right;
-
 }
 
+#sidebar.active {
+    transform: translateX(0);
+}
 
 #sidebar ul {
     list-style: none;
@@ -234,151 +235,167 @@ body {
 
 #sidebar ul li a {
     color: var(--tertiary-color-300);
-    text-align: right;
-    
     text-decoration: none;
     font-size: 18px;
-
-    padding: 5px 100px; 
-    border: 2px solid transparent; 
-    transition: all 0.3s ease; 
+    padding: 5px 16px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
+
 #sidebar ul li a:hover {
-
-    background-color:  var(--tertiary-color-100)
+    background-color: var(--tertiary-color-100);
 }
+
 #sidebar ul li a:active {
-    background-color: var(--primary-color-250); 
-    color: var(--tertiary-color-300); 
-}
-#sidebar.active {
-    transform: translateX(100%); 
+    background-color: var(--primary-color-250);
+    color: var(--tertiary-color-300);
 }
 
+#content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 25px;
+}
 
-@media (min-width: 768px) {
-    #sidebar {
-        transform: translateX(); 
-    }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
 
-    #wrap {
-        display: flex; 
-        flex-direction: row;
-    }
+.card {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    border: solid var(--tertiary-color-100);
+    border-radius: var(--card-border-redius);
+    border-width: 1.5px;
+}
+
+.card-content {
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    text-align: right;
+    margin: 16px;
+}
+
+.card-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card-badge {
+    background-color: #ff4d4d;
+    color: var(--primary-color-250);
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.line {
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--tertiary-color-100);
+    margin: 8px 0;
+}
+
+.job-img {
+    width: 50px;
+    height: 50px;
+    align-self: end;
+    margin-right: 5px;
+}
+
+.des {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 16px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.date {
+    font-size: 14px;
+    color: var(--primary-color);
+    text-align: right;
+    margin-right: 8px;
+}
+
+.tertiary-btn {
+    background-color: var(--btn-primary-bg-color);
+    font-size: 12px;
+    color: var(--primary-color-250);
+    border: none;
+    padding: 10px 8px;
+    border-radius: var(--tertiary-btn-border-reduis);
+    cursor: pointer;
+    margin: 3px 8px 0;
+}
+
+.tertiary-btn:hover {
+    background-color: var(--success-color);
 }
 
 
 @media (max-width: 768px) {
-    #wrap {
-        display: flex; 
-        flex-direction: column;
-    }
     #content {
-        flex: none;
+        grid-template-columns: 1fr;
     }
-}
 
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
 
-#content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    gap: 10px;
-    padding: 25px;
-    background-color: #f9f9f9;
-}
-body {
-    background-color: mintcream;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: row;
-    max-width: 30em;
-    background-color: #696969;
-    color: white;
-    border-radius: 0.5em;
-    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
-    overflow: hidden;
-  }
-  
-  
-  .card-img {
-    max-width: 25%;
-    margin: auto;
-    padding: 0.5em;
-    border-radius: 0.5em;
-  }
-  
-  .card-body {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    padding: 1em;
-  }
-  
-  
-  .text-section {
-    max-width: 60%;
-  }
-  
-  .card-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-  }
-  
-  .card-text {
-    font-size: 0.9em;
-    color: #ddd;
-  }
-  
-
-  .cta-section {
-    max-width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
-  
-  .price {
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-bottom: 1em;
-  }
-  
-  .btn {
-    padding: 0.5em 1em;
-    background-color: #898989;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.3em;
-    font-size: 0.9em;
-    text-align: center;
-  }
-  
-
-  @media screen and (max-width: 475px) {
     .card {
-      font-size: 0.9em;
-      flex-direction: column;
-      align-items: center;
+        width: 100%;
+        font-size: 0.9em;
     }
-  
+
     .card-body {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-  
+}
+
+@media (max-width: 475px) {
+    .card {
+        font-size: 0.85em;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
     .cta-section {
-      align-items: center;
+        align-items: center;
     }
-  }
-  
+}

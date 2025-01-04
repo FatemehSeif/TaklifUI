@@ -160,6 +160,7 @@ body{
   align-items:center; 
   justify-content: flex-start; 
   margin-right:16px;
+  font-family: var(--font-family);
 }
 .nav-item{
     display: flex;
@@ -179,7 +180,7 @@ body{
    
 }
 .hamburger-menu {
-    display: none; /* در حالت دسکتاپ نمایش داده نمی‌شود */
+    display: none; 
     font-size: 30px;
     cursor: pointer;
 }
@@ -275,6 +276,7 @@ body{
     padding: 5px 5px;
     background-color: var(--primary-color-250);
     font-family: var(--font-family-Regular);
+    font-family: var(--font-family);
 }
 .logo {
     font-size: 18px;
@@ -286,6 +288,7 @@ body{
     align-items: flex-end; 
     color: var(--primary-color-300);
     justify-content: flex-start; 
+    font-family: var(--font-family);
 }
 .main-container{
     display: flex;
@@ -353,10 +356,12 @@ svg {
     .job-card-title,
     .job-card-subtitle {
      margin-top: 4px;
+     font-family: var(--font-family);
     }
     .job-card-subtitle {
      font-size: 12px;
      font-weight: 500;
+     font-family: var(--font-family);
     }
    }   
 .job-logos {
@@ -376,6 +381,7 @@ svg {
 .job-action {
     display: flex;
     align-items: center;
+    font-family: var(--font-family);
     margin-left: auto;
     svg {
      width: 32px;
@@ -398,6 +404,7 @@ svg {
    }
 .job-explain {
  flex:1;
+ font-family: var(--font-family);
  padding: 16px;
  border-radius: 8px;
    margin-left: 160px;
@@ -415,12 +422,14 @@ svg {
 
 .job-explain-content {
     padding: 50px 25px 30px;
+    font-family: var(--font-family);
     background-color: #fff;
 }
 
 .job-subtitle-wrapper {
     display: flex;
     align-items: center;
+
     margin-top: 20px;
     justify-content: flex-end;
 }
@@ -431,6 +440,7 @@ svg {
 
 .company-name {
     color: #2d9cdb;
+    font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
 }
@@ -440,11 +450,13 @@ svg {
     color: #bdbdbd;
     font-size: 12px;
     font-weight: 500;
+    font-family: var(--font-family);
 }
 
 .comp-location {
     position: relative;
     margin-right: 10px;
+    font-family: var(--font-family);
 }
 
 .comp-location:before {
@@ -464,16 +476,6 @@ svg {
     margin-right: 12px;
 }
 
-.app-number:before {
-    content: "";
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background-color: #ccc;
-    top: 50%;
-    right: -7px;
-    position: absolute;
-}
 .explain-bar {
     margin-top: 20px;
     border: 1px solid #e0e0e0;
@@ -482,6 +484,7 @@ svg {
     height: 66px;
     padding: 0; 
     align-items: center;
+    font-family: var(--font-family);
     justify-content: space-between;  
     background-color: #fff;  
     overflow: hidden;
@@ -494,6 +497,7 @@ svg {
     align-items: center; 
     justify-content: center;  
     text-align: center;
+    font-family: var(--font-family);
     height: 100%;  
     padding: 0 8px;  
     border-left: 1px solid #e0e0e0;
@@ -509,11 +513,13 @@ svg {
     margin-bottom: 4px;  
     line-height: 1.2;  
     white-space: nowrap;  
+    font-family: var(--font-family);
 }
 
 .explain-subtitle {
     font-size: 14px;
     font-weight: 500;
+    font-family: var(--font-family);
     color: #333; 
     white-space: nowrap;  
 }
@@ -521,16 +527,19 @@ svg {
 
 .overview-text {
     margin-top: 30px;
+    font-family: var(--font-family);
 }
 
 .overview-text-header {
     font-weight: 600;
     margin-bottom: 25px;
+    font-family: var(--font-family);
 }
 
 .overview-text-subheader {
     font-size: 13px;
     line-height: 2em;
+    font-family: var(--font-family);
 }
 
 .overview-text-item {
@@ -548,6 +557,7 @@ svg {
     border-radius: 50%;
     height: 8px;
     width: 8px;
+    font-family: var(--font-family);
     margin-top: 3px;
     margin-left: 8px;
     flex-shrink: 0;

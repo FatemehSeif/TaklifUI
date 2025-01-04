@@ -155,7 +155,7 @@ body {
     list-style: none;
     padding: 0 15px;
     margin: 16px;
-
+    font-family: var(--font-family);
     border-radius: 4px;
     font-size: 14px;
   }
@@ -196,12 +196,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 16px;
     text-align: center;
+    font-family: var(--font-family);
 }
 
 .profile-header {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--font-family);
     flex-direction: column;
 }
 
@@ -252,6 +254,7 @@ body {
 
 .profile-name {
     font-size: 18px;
+    font-family: var(--font-family);
     margin: 0;
 }
 
@@ -262,6 +265,7 @@ body {
 
 .profile-content {
     margin-top: 20px;
+    font-family: var(--font-family);
 }
 
 .details-btn {
@@ -272,6 +276,7 @@ body {
     padding: 10px 140px;
     border-radius: 4px;
     cursor: pointer;
+    font-family: var(--font-family);
 }
 
 .general-settings {
@@ -290,6 +295,7 @@ body {
 form {
     display: flex;
     flex-direction: column;
+    font-family: var(--font-family);
 }
 
 form label {
