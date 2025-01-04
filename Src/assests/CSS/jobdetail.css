@@ -203,6 +203,7 @@ body{
     }
     .nav-items {
         display: none;
+        text-decoration: none;
         flex-direction: column;
         width: 100%;
         background-color: #fff;

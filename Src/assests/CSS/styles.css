@@ -252,15 +252,15 @@ body {
 }
 
 #content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+   
     gap: 16px;
     padding: 25px;
 }
 
-.cards {
+.card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+   
     gap: 16px;
     padding: 16px;
 }
@@ -363,16 +363,29 @@ body {
     background-color: var(--success-color);
 }
 
+@media (min-width: 768px) { 
+    #sidebar {
+        transform: translateX(0); 
+        position: static; 
+        border-right: solid var(--tertiary-color-100); 
+    }
+}
 
+@media (min-width: 768px) {
+    #content {
+        margin-right: 32px; 
+    }
+}
 @media (max-width: 768px) {
     #content {
         grid-template-columns: 1fr;
     }
 
-    .cards {
+    .card-container {
         grid-template-columns: 1fr;
         padding: 0;
     }
+    
 
     .card {
         width: 100%;
