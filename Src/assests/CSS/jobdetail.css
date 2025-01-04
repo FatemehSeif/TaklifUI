@@ -165,6 +165,8 @@ body{
 .nav-item{
     display: flex;
     flex-direction: row; 
+    text-decoration: none;
+    font-family: var(--font-family);
     align-items: center; 
     justify-content: flex-start;
 }
@@ -277,7 +279,7 @@ body{
     padding: 5px 5px;
     background-color: var(--primary-color-250);
     font-family: var(--font-family-Regular);
-    font-family: var(--font-family);
+    
 }
 .logo {
     font-size: 18px;

@@ -26,3 +26,15 @@ function submitForm() {
 function toggleTheme() {
     document.body.classList.toggle('dark-theme');
 }
+function triggerFileInput() {
+  
+    document.getElementById('file-input').click();
+}
+
+document.getElementById('file-input').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+        console.log('File selected:', file.name);
+       
+    }
+});

@@ -32,7 +32,7 @@ const cardHTML = `
             <div class="date">
                 <p class="body-small">سه روز پیش</p>
             </div>
-            <div class="tertiary-btn" onclick="window.location.href='notifications.html';">ارسال رزومه</div>
+            <div class="tertiary-btn" onclick="window.location.href='c:\Users\SH.Rayan\Desktop\DashUI\Src\jobdetail.html';">ارسال رزومه</div>
         </div>
     </div>
 </div>`;
